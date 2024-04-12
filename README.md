@@ -18,30 +18,29 @@ This library tested using Indonesian language. Other languages may work, but the
 Here is an example of how to use the Boolean Model:
 
 ```python
-from pyirtools.model import BooleanModel
+from PyIRTools.model.boolean import BooleanModel
 
 # Create a Boolean Model
-boolean_model = BooleanModel()
+boolean_model = BooleanModel("indonesian")
 
 # Index some documents
 documents = """Saya tidak masuk sekolah karena sakit.
     Saya ke sekolah berjalan kaki.
     Makanan favorit saya ayam goreng."""
-model.insert_document(documents)
+boolean_model.insert_documents(documents)
 
 # Retrieve documents using a query
 query = "Sekolah OR (makan AND NOT ayam)"
-model.search(query)
+boolean_model.search(query)
 ```
 
 And here is an example of how to use the Vector Space Model:
 
 ```python
-from pyirtools.model import VectorSpaceModel
+from PyIRTools.model.space_vector import SpaceVectorModel
 
 # Create a Vector Space Model
-vsm = VectorSpaceModel()
-
+vsm = SpaceVectorModel("indonesian")
 query = "Stadion Lapangan Populer"
 text = """Setiap akhir pekan, saya sering menonton sepak bola di stadion.
 Saya suka bermain sepak bola di lapangan dekat rumah saya.
@@ -60,7 +59,7 @@ df_tf = vsm.calculate_tf_idf()
 vsm.get_relevant_document_index(df_tf, verbose=True)
 
 # save to excel
-svm.save_to_excel(df_tf, "cosine_similarity.xlsx")
+vsm.save_to_excel(df_tf, "cosine_similarity.xlsx")
 
 ```
 
