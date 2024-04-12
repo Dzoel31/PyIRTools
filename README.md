@@ -94,22 +94,28 @@ This project was inspired by my assignment in the Information Retrieval course a
     git clone https://github.com/Dzoel31/PyIRTools.git
     ```
 
-4. Create a new branch
+4. Install the dependencies
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. Create a new branch
 
     ```bash
     git checkout -b <branch_name>
     ```
 
-5. Commit your changes
+6. Commit your changes
 
     ```bash
     git commit -am "Your message"
     ```
 
-6. Push to the branch
+7. Push to the branch
 
     ```bash
     git push origin <branch_name>
     ```
 
-7. Create a new Pull Request
+8. Create a new Pull Request
