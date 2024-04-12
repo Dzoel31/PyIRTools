@@ -7,8 +7,8 @@ PyIRTools is a Python library that provides a set of tools for Information Retri
 This library still in development and not yet available on PyPI. You can install it by cloning the repository and running the setup script:
 
 ```bash
-git clone <repository_url>
-cd pyirtools
+git clone https://github.com/Dzoel31/PyIRTools.git
+cd PyIRTools
 py install .
 ```
 
@@ -88,7 +88,28 @@ This project was inspired by my assignment in the Information Retrieval course a
     ```
 
 2. Fork the repository
-3. Create a new branch (`git checkout -b <branch_name>`)
-4. Commit your changes (`git commit -am '<commit_message>'`)
-5. Push to the branch (`git push origin <branch_name>`)
-6. Create a new Pull Request
+3. Clone the repository
+
+    ```bash
+    git clone https://github.com/Dzoel31/PyIRTools.git
+    ```
+
+4. Create a new branch
+
+    ```bash
+    git checkout -b <branch_name>
+    ```
+
+5. Commit your changes
+
+    ```bash
+    git commit -am "Your message"
+    ```
+
+6. Push to the branch
+
+    ```bash
+    git push origin <branch_name>
+    ```
+
+7. Create a new Pull Request
