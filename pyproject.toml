@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyIRTools"
+version = "0.1.0"
+dependencies = [
+    "inflect",
+    "nltk",
+    "numpy",
+    "pandas",
+    "Sastrawi",
+]
+authors = [
+    {name="Dzulfikri Adjmal"},
+    {email="dzulfikriadjmal@gmail.com"},
+]
+description = "Python tools for calculating term frequency, inverse document frequecy, and text similarity."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["PyIRTools", "PyIRTools.*"]
+exclude = ["env", "out"]
+namespaces = false 
+
+[project.urls]
+Repository = "https://github.com/Dzoel31/PyIRTools"

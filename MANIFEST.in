@@ -1,0 +1,4 @@
+prune PyIRTools/tests
+prune env
+prune out
+prune build
